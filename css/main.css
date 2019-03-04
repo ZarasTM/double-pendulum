@@ -1,0 +1,35 @@
+*{
+    background: black;
+    color: #0F0;
+}
+
+#canvas
+{
+    position: absolute;
+    left: 280px;
+}
+
+#main_canvas
+{
+    background: rgba(0,0,0,0);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    border: solid #0F0 2px;
+    z-index: 2;
+}
+
+#trail_canvas
+{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    z-index: 1;
+}
+
+#sliders
+{
+    float: left;
+    padding-left: 50px;
+}
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Double Pendulum Simulation</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body onload="main();">
+<div id="canvas">
+    <canvas id="main_canvas" width="800" height="800">Your browser does not support canvas objects</canvas>
+    <canvas id="trail_canvas" width="800" height="800">Your browser does not support canvas objects</canvas>
+</div>
+<div id="sliders">
+    <div class="slidecontainer">
+        <p>Mass 1: </p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="massSlid1">
+    </div>
+    <div class="slidecontainer">
+        <p>Mass 2: </p>
+        <input type="range" min="1" max="100" value="10" class="slider" id="massSlid2">
+    </div>
+    <div class="slidecontainer">
+        <p>Dampening: </p>
+        <input type="range" min="10" max="1000" value="1000" class="slider" id="dampSlid">
+    </div>
+    <div class="slidecontainer">
+        <p>Arm length 1: </p>
+        <input type="range" min="10" max="300" value="150" class="slider" id="armSlid1">
+    </div>
+    <div class="slidecontainer">
+        <p>Arm length 2: </p>
+        <input type="range" min="10" max="300" value="150" class="slider" id="armSlid2">
+    </div>
+</div>
+<script src="script/doublePendulum.js"></script>
+</body>
+</html>
